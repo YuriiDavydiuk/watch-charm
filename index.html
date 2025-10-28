@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WatchCharm</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header>
@@ -24,9 +32,24 @@
 
       <!--header-socials-->
       <ul>
-        <li><a href="https://www.facebook.com/"></a></li>
-        <li><a href="https://www.instagram.com/"></a></li>
-        <li><a href="https://www.youtube.com"></a></li>
+        <li>
+          <a href="https://www.facebook.com/"
+            ><svg width="20" height="20">
+              <use href="./images/icon.svg#icon-facebook"></use></svg
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/"
+            ><svg width="20" height="20">
+              <use href="./images/icon.svg#icon-instagram"></use></svg
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com"></a
+          ><svg width="20" height="20">
+            <use href="./images/icon.svg#icon-youtube"></use>
+          </svg>
+        </li>
       </ul>
     </header>
     <main>
@@ -42,11 +65,55 @@
             </p>
           </div>
           <div>
-            <img />
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/hero-img/desktop-hero-customer@1x.jpg 1x,
+                  ./images/hero-img/desktop-hero-customer@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 768px) and (max-width: 1279px)"
+                srcset="
+                  ./images/hero-img/tablet-hero-customer@1x.jpg 1x,
+                  ./images/hero-img/tablet-hero-customer@2x.jpg 2x
+                "
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/hero-img/mobile-hero-customer@1x.jpg 1x,
+                  ./images/hero-img/mobile-hero-customer@2x.jpg 2x
+                "
+              />
+              <img src="./images/hero-img/desktop-hero-customer@1x.jpg" />
+            </picture>
             <a href="#">Scroll down</a>
           </div>
         </div>
-        <img />
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/hero-img/desktop-hero@1x.jpg 1x,
+              ./images/hero-img/desktop-hero@2x.jpg 2x
+            " />
+          <source
+            media="(min-width: 768px) and (max-width: 1279px)"
+            srcset="
+              ./images/hero-img/tablet-hero@1x.jpg 1x,
+              ./images/hero-img/tablet-hero@2x.jpg 2x
+            " />
+          <source
+            media="(max-width: 767px) "
+            srcset="
+              ./images/hero-img/mobile-hero@1x.jpg 1x,
+              ./images/hero-img/mobile-hero@2x.jpg 2x
+            " />
+
+          <img src="./images/hero-img/desktop-hero@1x.jpg"
+        /></picture>
       </section>
 
       <!--section-2-about-us-->
@@ -67,7 +134,27 @@
           </p>
           <a href="#">View catalog</a>
         </article>
-        <img />
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              ./images/about-us/desktop-about-us@1x.jpg 1x,
+              ./images/about-us/desktop-about-us@2x.jpg 2x
+            " />
+          <source
+            media="(min-width: 768px) and (max-width: 1279px)"
+            srcset="
+              ./images/about-us/tablet-about-us@1x.jpg 1x,
+              ./images/about-us/tablet-about-us@2x.jpg 2x
+            " />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/about-us/mobile-about-us@1x.jpg 1x,
+              ./images/about-us/mobile-about-us@2x.jpg 2x
+            " />
+          <img src="./images/about-us/desktop-about-us@1x.jpg"
+        /></picture>
       </section>
 
       <!--section-3-catalog-->
@@ -75,33 +162,325 @@
         <h2>Catalog</h2>
         <ul>
           <li>
-            <img />
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/catalog/desktop-watch-1@1x.jpg 1x,
+                  ./images/catalog/desktop-watch-1@2x.jpg 2x
+                " />
+              <source
+                media="(min-width: 768px) and (max-width: 1279px)"
+                srcset="
+                  ./images/catalog/tablet-watch-1@1x.jpg 1x,
+                  ./images/catalog/tablet-watch-1@2x.jpg 2x
+                " />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/catalog/mobile-watch-1@1x.jpg 1x,
+                  ./images/catalog/mobile-watch-1@2x.jpg 2x
+                " />
+              <img src="./images/catalog/desktop-watch-1@1x.jpg"
+            /></picture>
             <h3>Garmin Fenix 7X Pro Sapphire Solar</h3>
             <p>€500</p>
           </li>
           <li>
-            <img />
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/catalog/desktop-watch-2@1x.jpg 1x,
+                  ./images/catalog/desktop-watch-2@2x.jpg 2x
+                " />
+              <source
+                media="(min-width: 768px) and (max-width: 1279px)"
+                srcset="
+                  ./images/catalog/tablet-watch-2@1x.jpg 1x,
+                  ./images/catalog/tablet-watch-2@2x.jpg 2x
+                " />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/catalog/mobile-watch-2@1x.jpg 1x,
+                  ./images/catalog/mobile-watch-2@2x.jpg 2x
+                " />
+              <img src="./images/catalog/desktop-watch-2@1x.jpg"
+            /></picture>
             <h3>Garmin Marq Athlete</h3>
             <p>€450</p>
           </li>
           <li>
-            <img />
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/catalog/desktop-watch-3@1x.jpg 1x,
+                  ./images/catalog/desktop-watch-3@2x.jpg 2x
+                " />
+              <source
+                media="(min-width: 768px) and (max-width: 1279px)"
+                srcset="
+                  ./images/catalog/tablet-watch-3@1x.jpg 1x,
+                  ./images/catalog/tablet-watch-3@2x.jpg 2x
+                " />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/catalog/mobile-watch-3@1x.jpg 1x,
+                  ./images/catalog/mobile-watch-3@2x.jpg 2x
+                " />
+              <img src="./images/catalog/desktop-watch-3@1x.jpg"
+            /></picture>
             <h3>Garmin Descent MK1</h3>
             <p>€680</p>
           </li>
           <li>
-            <img />
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/catalog/desktop-watch-4@1x.jpg 1x,
+                  ./images/catalog/desktop-watch-4@2x.jpg 2x
+                " />
+              <source
+                media="(min-width: 768px) and (max-width: 1279px)"
+                srcset="
+                  ./images/catalog/tablet-watch-4@1x.jpg 1x,
+                  ./images/catalog/tablet-watch-4@2x.jpg 2x
+                " />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/catalog/mobile-watch-4@1x.jpg 1x,
+                  ./images/catalog/mobile-watch-4@2x.jpg 2x
+                " />
+              <img src="./images/catalog/desktop-watch-4@1x.jpg"
+            /></picture>
             <h3>Garmin D2 Delta PX</h3>
             <p>€380</p>
           </li>
           <li>
-            <img />
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/catalog/desktop-watch-5@1x.jpg 1x,
+                  ./images/catalog/desktop-watch-5@2x.jpg 2x
+                " />
+              <source
+                media="(min-width: 768px) and (max-width: 1279px)"
+                srcset="
+                  ./images/catalog/tablet-watch-5@1x.jpg 1x,
+                  ./images/catalog/tablet-watch-5@2x.jpg 2x
+                " />
+
+              <img src="./images/catalog/desktop-watch-5@1x.jpg"
+            /></picture>
             <h3>Garmin Fenix 6 Pro Solar</h3>
             <p>€400</p>
           </li>
           <li>
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/catalog/desktop-watch-6@1x.jpg 1x,
+                  ./images/catalog/desktop-watch-6@2x.jpg 2x
+                " />
+              <source
+                media="(min-width: 768px) and (max-width: 1279px)"
+                srcset="
+                  ./images/catalog/tablet-watch-6@1x.jpg 1x,
+                  ./images/catalog/tablet-watch-6@2x.jpg 2x
+                " />
+              <img src="./images/catalog/desktop-watch-6@1x.jpg"
+            /></picture>
             <h3>Tube Watch S42 Date Steel With Black Case €395</h3>
             <p>€395</p>
+          </li>
+        </ul>
+        <a href="#">Show More</a>
+      </section>
+
+      <!--section-4-advertisement-->
+      <section>
+        <h2 hidden>Advertisement</h2>
+        <h3>
+          Choose your story, making every moment unique. Time is your style, and
+          we reveal it.
+        </h3>
+        <a href="#">Contact Us</a>
+      </section>
+
+      <!--section-5-sale-->
+      <section>
+        <h2>Sale</h2>
+        <ul>
+          <li>
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/sale/watch-1@1x.jpg 1x,
+                  ./images/sale/watch-1@2x.jpg 2x
+                " />
+              <source
+                media="(max-width: 767px) "
+                srcset="
+                  ./images/sale/mobile-sale-watch-1@1x.jpg 1x,
+                  ./images/sale/mobile-sale-watch-1@2x.jpg 2x
+                " />
+
+              <img src="./images/sale/watch-1@1x.jpg"
+            /></picture>
+          </li>
+          <li>
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/sale/watch-2@1x.jpg 1x,
+                  ./images/sale/watch-2@2x.jpg 2x
+                " />
+              <source
+                media="(max-width: 767px) "
+                srcset="
+                  ./images/sale/mobile-sale-watch-2@1x.jpg 1x,
+                  ./images/sale/mobile-sale-watch-2@2x.jpg 2x
+                " />
+
+              <img src="./images/sale/watch-2@1x.jpg"
+            /></picture>
+          </li>
+          <li>
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/sale/watch-3@1x.jpg 1x,
+                  ./images/sale/watch-3@2x.jpg 2x
+                " />
+              <source
+                media="(max-width: 767px) "
+                srcset="
+                  ./images/sale/mobile-sale-watch-3@1x.jpg 1x,
+                  ./images/sale/mobile-sale-watch-3@2x.jpg 2x
+                " />
+
+              <img src="./images/sale/watch-3@1x.jpg"
+            /></picture>
+          </li>
+          <li>
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/sale/watch-4@1x.jpg 1x,
+                  ./images/sale/watch-4@2x.jpg 2x
+                " />
+              <source
+                media="(max-width: 767px) "
+                srcset="
+                  ./images/sale/mobile-sale-watch-4@1x.jpg 1x,
+                  ./images/sale/mobile-sale-watch-4@2x.jpg 2x
+                " />
+
+              <img src="./images/sale/watch-4@1x.jpg"
+            /></picture>
+          </li>
+        </ul>
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/sale/watch-5@1x.jpg 1x,
+              ./images/sale/watch-5@2x.jpg 2x
+            " />
+          <source
+            media="(max-width: 767px) "
+            srcset="
+              ./images/sale/mobile-sale-watch-5@1x.jpg 1x,
+              ./images/sale/mobile-sale-watch-5@2x.jpg 2x
+            " />
+          <img src="./images//sale/mobile-sale-watch-5@1x.jpg"
+        /></picture>
+
+        <article>
+          <h3>MARQ® Commander (Gen 2) - Carbon Edition</h3>
+          <p>Product tag: 706587</p>
+          <ul>
+            <li>€1500</li>
+            <li>€3000</li>
+          </ul>
+          <p>
+            The Garmin MARQ Commander Gen 2 Carbon Edition is a modern
+            smartwatch for adventurers that takes materials and features to the
+            next level. The body of the watch is made of very durable Fused
+            Carbon Fiber material and has a precise AMOLED touch screen. The
+            sensitive touch screen is complemented by buttons that can be used
+            in any conditions.
+          </p>
+          <ul>
+            <li>Fused carbon fiber</li>
+            <li>Grade-5 Titanuim</li>
+            <li>Athlete</li>
+            <li>Golfer</li>
+            <li>Commander</li>
+            <li>Adventurer</li>
+          </ul>
+        </article>
+      </section>
+
+      <!--section-6-reviews-->
+      <section>
+        <h2>Reviews</h2>
+        <ul>
+          <li>
+            <img
+              srcset="
+                ./images/reviews/jonh-max@1x.jpg 1x,
+                ./images/reviews/jonh-max@2x.jpg 2x
+              "
+              src="./images/reviews/jonh-max@1x.jpg"
+            />
+            <h3>John Wax</h3>
+            <p>
+              Buying a watch from was the best choice for me. The design is
+              perfectly combined with high quality materials. The strap fits
+              nicely on the hand, and the mechanism works flawlessly.
+            </p>
+          </li>
+          <li>
+            <img
+              srcset="
+                ./images/reviews/victoria-romashenko@1x.jpg 1x,
+                ./images/reviews/victoria-romashenko@2x.jpg 2x
+              "
+              src="./images/reviews/victoria-romashenko@1x.jpg"
+            />
+            <h3>Victoria Romashenko</h3>
+            <p>
+              Can't take my eyes off my watch from. Every time I put it on, it
+              is admired by those around me. The build quality and attention to
+              detail make it a real gem among my accessories..
+            </p>
+          </li>
+          <li>
+            <img
+              srcset="
+                ./images/reviews/anastasia-trachuk@1x.jpg 1x,
+                ./images/reviews/anastasia-trachuk@2x.jpg 2x
+              "
+              src="./images/reviews/anastasia-trachuk@1x.jpg"
+            />
+            <h3>Anastasia Trachuk</h3>
+            <p>
+              My watch from is a real masterpiece. Every detail impresses with
+              the high quality of execution. Special features like [specify
+              features] make it an indispensable companion in my daily life.
+            </p>
           </li>
         </ul>
       </section>
