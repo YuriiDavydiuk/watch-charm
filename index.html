@@ -54,20 +54,23 @@
             <li class="header-socials-item">
               <a class="header-socials-link" href="https://www.facebook.com/"
                 ><svg width="20" height="20">
-                  <use href="./images/icon.svg#icon-facebook"></use></svg
+                  <use
+                    class="header-socials-icon"
+                    href="./images/icon.svg#icon-facebook"
+                  ></use></svg
               ></a>
             </li>
             <li class="header-socials-item">
               <a class="header-socials-link" href="https://www.instagram.com/"
-                ><svg width="20" height="20">
+                ><svg class="header-socials-icon" width="20" height="20">
                   <use href="./images/icon.svg#icon-instagram"></use></svg
               ></a>
             </li>
             <li class="header-socials-item">
-              <a class="header-socials-link" href="https://www.youtube.com"></a
-              ><svg width="20" height="20">
-                <use href="./images/icon.svg#icon-youtube"></use>
-              </svg>
+              <a class="header-socials-link" href="https://www.youtube.com">
+                <svg class="header-socials-icon" width="20" height="20">
+                  <use href="./images/icon.svg#icon-youtube"></use></svg
+              ></a>
             </li>
           </ul>
         </nav>
@@ -82,66 +85,69 @@
     </header>
     <main>
       <!--section-1-hero-->
-      <section class="hidden">
-        <div>
-          <div>
-            <h1>Welcome to our <span>collection</span> of premium watches</h1>
-            <p>
-              Our watches are not just timepieces, but also an expression of
-              your personality and lifestyle. From classic designs to modern
-              ones, we have a watch to suit every taste and occasion.
-            </p>
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-wrapper">
+            <div class="hero-wrapper-top">
+              <h1 class="hero-title">Welcome to our <span class="hero-accent">collection</span> of premium watches</h1>
+              <p class="hero-desc">
+                Our watches are not just timepieces, but also an expression of
+                your personality and lifestyle. From classic designs to modern
+                ones, we have a watch to suit every taste and occasion.
+              </p>
+            </div>
+            <div class="hero-wrapper-middle">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/hero-img/desktop-hero-customer@1x.jpg 1x,
+                    ./images/hero-img/desktop-hero-customer@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px) and (max-width: 1279px)"
+                  srcset="
+                    ./images/hero-img/tablet-hero-customer@1x.jpg 1x,
+                    ./images/hero-img/tablet-hero-customer@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/hero-img/mobile-hero-customer@1x.jpg 1x,
+                    ./images/hero-img/mobile-hero-customer@2x.jpg 2x
+                  "
+                />
+                <img class="hero-icon" src="./images/hero-img/desktop-hero-customer@1x.jpg" alt="customer" />
+              </picture>
+              <a class="hero-btn" href="#">Scroll down</a>
+            </div>
           </div>
-          <div>
-            <picture>
-              <source
-                media="(min-width: 1280px)"
-                srcset="
-                  ./images/hero-img/desktop-hero-customer@1x.jpg 1x,
-                  ./images/hero-img/desktop-hero-customer@2x.jpg 2x
-                "
-              />
-              <source
-                media="(min-width: 768px) and (max-width: 1279px)"
-                srcset="
-                  ./images/hero-img/tablet-hero-customer@1x.jpg 1x,
-                  ./images/hero-img/tablet-hero-customer@2x.jpg 2x
-                "
-              />
-              <source
-                media="(max-width: 767px)"
-                srcset="
-                  ./images/hero-img/mobile-hero-customer@1x.jpg 1x,
-                  ./images/hero-img/mobile-hero-customer@2x.jpg 2x
-                "
-              />
-              <img src="./images/hero-img/desktop-hero-customer@1x.jpg" />
-            </picture>
-            <a href="#">Scroll down</a>
-          </div>
-        </div>
-        <picture>
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              ./images/hero-img/desktop-hero@1x.jpg 1x,
-              ./images/hero-img/desktop-hero@2x.jpg 2x
-            " />
-          <source
-            media="(min-width: 768px) and (max-width: 1279px)"
-            srcset="
-              ./images/hero-img/tablet-hero@1x.jpg 1x,
-              ./images/hero-img/tablet-hero@2x.jpg 2x
-            " />
-          <source
-            media="(max-width: 767px) "
-            srcset="
-              ./images/hero-img/mobile-hero@1x.jpg 1x,
-              ./images/hero-img/mobile-hero@2x.jpg 2x
-            " />
 
-          <img src="./images/hero-img/desktop-hero@1x.jpg"
-        /></picture>
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/hero-img/desktop-hero@1x.jpg 1x,
+                ./images/hero-img/desktop-hero@2x.jpg 2x
+              " />
+            <source
+              media="(min-width: 768px) and (max-width: 1279px)"
+              srcset="
+                ./images/hero-img/tablet-hero@1x.jpg 1x,
+                ./images/hero-img/tablet-hero@2x.jpg 2x
+              " />
+            <source
+              media="(max-width: 767px) "
+              srcset="
+                ./images/hero-img/mobile-hero@1x.jpg 1x,
+                ./images/hero-img/mobile-hero@2x.jpg 2x
+              " />
+
+            <img class="hero-img" src="./images/hero-img/desktop-hero@1x.jpg" alt="watch"
+          /></picture>
+        </div>
       </section>
 
       <!--section-2-about-us-->
@@ -521,34 +527,35 @@
     </footer>
 
     <!--mobile-menu-->
-    <div class="hidden">
-      <div class="container mobile-menu-containet">
-        <button class="mobile-menu-btn">
-          <svg class="mobile-menu-icon" width="17" height="17">
+    <div class="mobile-menu" data-mobile>
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-btn" data-mobile-close>
+          <svg class="mobile-menu-icon" width="20" height="20">
             <use href="./images/icon.svg#icon-mobile-menu-close"></use>
           </svg>
         </button>
-        <nav class="mobile nav"></nav>
-        <ul class="mobile-nav-list">
-          <li class="mobile-nav-item">
-            <a class="mobile-nav-link" href="./index.html">Home</a>
-          </li>
-          <li class="mobile-nav-item">
-            <a class="mobile-nav-link" href="#">About Us</a>
-          </li>
-          <li class="mobile-nav-item">
-            <a class="mobile-nav-link" href="#">Catalog</a>
-          </li>
-          <li class="mobile-nav-item">
-            <a class="mobile-nav-link" href="#">Sale</a>
-          </li>
-          <li class="mobile-nav-item">
-            <a class="mobile-nav-link" href="#">Reviews</a>
-          </li>
-          <li class="mobile-nav-item">
-            <a class="mobile-nav-link" href="#">Contact Us</a>
-          </li>
-        </ul>
+        <nav class="mobile-nav">
+          <ul class="mobile-nav-list">
+            <li class="mobile-nav-item">
+              <a class="mobile-nav-link current" href="./index.html">Home</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a class="mobile-nav-link" href="#">About Us</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a class="mobile-nav-link" href="#">Catalog</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a class="mobile-nav-link" href="#">Sale</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a class="mobile-nav-link" href="#">Reviews</a>
+            </li>
+            <li class="mobile-nav-item">
+              <a class="mobile-nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
 
         <ul class="mobile-socials">
           <li class="mobile-socials-item">
@@ -572,5 +579,8 @@
         </ul>
       </div>
     </div>
+
+    <script src="./js/click.js"></script>
+    <script src="./js/modal-menu.js"></script>
   </body>
 </html>
