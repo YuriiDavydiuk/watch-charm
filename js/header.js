@@ -1,28 +1,33 @@
 const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".header-menu-link");
+const desktopLinks = document.querySelectorAll(".header-menu-link");
+const mobileLinks = document.querySelectorAll(".mobile-nav-link");
 
-// Функція для встановлення активного класу
 function setActiveLink(id) {
-  navLinks.forEach(link => {
+  // Для десктопного меню
+  desktopLinks.forEach(link => {
+    link.classList.toggle("current", link.getAttribute("href") === `#${id}`);
+  });
+
+  // Для мобільного меню
+  mobileLinks.forEach(link => {
     link.classList.toggle("current", link.getAttribute("href") === `#${id}`);
   });
 }
 
-// Налаштування Intersection Observer
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        setActiveLink(entry.target.id);
+        const id = entry.target.id === "hero" ? "home" : entry.target.id;
+        setActiveLink(id);
       }
     });
   },
   {
     root: null,
     rootMargin: "0px",
-    threshold: 0.6, // 60% елемента має бути видно
+    threshold: 0.3,
   }
 );
 
-// Спостерігати за кожним розділом
 sections.forEach(section => observer.observe(section));

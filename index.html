@@ -36,16 +36,16 @@
               <a class="header-menu-link" href="#about">About Us</a>
             </li>
             <li class="header-menu-item">
-              <a class="header-menu-link" href="#">Catalog</a>
+              <a class="header-menu-link" href="#catalog">Catalog</a>
             </li>
             <li class="header-menu-item">
-              <a class="header-menu-link" href="#">Sale</a>
+              <a class="header-menu-link" href="#sale">Sale</a>
             </li>
             <li class="header-menu-item">
-              <a class="header-menu-link" href="#">Reviews</a>
+              <a class="header-menu-link" href="#reviews">Reviews</a>
             </li>
             <li class="header-menu-item">
-              <a class="header-menu-link" href="#">Contact Us</a>
+              <a class="header-menu-link" href="#contact">Contact Us</a>
             </li>
           </ul>
 
@@ -207,150 +207,194 @@
       </section>
 
       <!--section-3-catalog-->
-      <section class="hidden">
-        <h2>Catalog</h2>
-        <ul>
-          <li>
-            <picture>
-              <source
-                media="(min-width: 1280px)"
-                srcset="
-                  ./images/catalog/desktop-watch-1@1x.jpg 1x,
-                  ./images/catalog/desktop-watch-1@2x.jpg 2x
-                " />
-              <source
-                media="(min-width: 768px) and (max-width: 1279px)"
-                srcset="
-                  ./images/catalog/tablet-watch-1@1x.jpg 1x,
-                  ./images/catalog/tablet-watch-1@2x.jpg 2x
-                " />
-              <source
-                media="(max-width: 767px)"
-                srcset="
-                  ./images/catalog/mobile-watch-1@1x.jpg 1x,
-                  ./images/catalog/mobile-watch-1@2x.jpg 2x
-                " />
-              <img src="./images/catalog/desktop-watch-1@1x.jpg"
-            /></picture>
-            <h3>Garmin Fenix 7X Pro Sapphire Solar</h3>
-            <p>€500</p>
-          </li>
-          <li>
-            <picture>
-              <source
-                media="(min-width: 1280px)"
-                srcset="
-                  ./images/catalog/desktop-watch-2@1x.jpg 1x,
-                  ./images/catalog/desktop-watch-2@2x.jpg 2x
-                " />
-              <source
-                media="(min-width: 768px) and (max-width: 1279px)"
-                srcset="
-                  ./images/catalog/tablet-watch-2@1x.jpg 1x,
-                  ./images/catalog/tablet-watch-2@2x.jpg 2x
-                " />
-              <source
-                media="(max-width: 767px)"
-                srcset="
-                  ./images/catalog/mobile-watch-2@1x.jpg 1x,
-                  ./images/catalog/mobile-watch-2@2x.jpg 2x
-                " />
-              <img src="./images/catalog/desktop-watch-2@1x.jpg"
-            /></picture>
-            <h3>Garmin Marq Athlete</h3>
-            <p>€450</p>
-          </li>
-          <li>
-            <picture>
-              <source
-                media="(min-width: 1280px)"
-                srcset="
-                  ./images/catalog/desktop-watch-3@1x.jpg 1x,
-                  ./images/catalog/desktop-watch-3@2x.jpg 2x
-                " />
-              <source
-                media="(min-width: 768px) and (max-width: 1279px)"
-                srcset="
-                  ./images/catalog/tablet-watch-3@1x.jpg 1x,
-                  ./images/catalog/tablet-watch-3@2x.jpg 2x
-                " />
-              <source
-                media="(max-width: 767px)"
-                srcset="
-                  ./images/catalog/mobile-watch-3@1x.jpg 1x,
-                  ./images/catalog/mobile-watch-3@2x.jpg 2x
-                " />
-              <img src="./images/catalog/desktop-watch-3@1x.jpg"
-            /></picture>
-            <h3>Garmin Descent MK1</h3>
-            <p>€680</p>
-          </li>
-          <li>
-            <picture>
-              <source
-                media="(min-width: 1280px)"
-                srcset="
-                  ./images/catalog/desktop-watch-4@1x.jpg 1x,
-                  ./images/catalog/desktop-watch-4@2x.jpg 2x
-                " />
-              <source
-                media="(min-width: 768px) and (max-width: 1279px)"
-                srcset="
-                  ./images/catalog/tablet-watch-4@1x.jpg 1x,
-                  ./images/catalog/tablet-watch-4@2x.jpg 2x
-                " />
-              <source
-                media="(max-width: 767px)"
-                srcset="
-                  ./images/catalog/mobile-watch-4@1x.jpg 1x,
-                  ./images/catalog/mobile-watch-4@2x.jpg 2x
-                " />
-              <img src="./images/catalog/desktop-watch-4@1x.jpg"
-            /></picture>
-            <h3>Garmin D2 Delta PX</h3>
-            <p>€380</p>
-          </li>
-          <li>
-            <picture>
-              <source
-                media="(min-width: 1280px)"
-                srcset="
-                  ./images/catalog/desktop-watch-5@1x.jpg 1x,
-                  ./images/catalog/desktop-watch-5@2x.jpg 2x
-                " />
-              <source
-                media="(min-width: 768px) and (max-width: 1279px)"
-                srcset="
-                  ./images/catalog/tablet-watch-5@1x.jpg 1x,
-                  ./images/catalog/tablet-watch-5@2x.jpg 2x
-                " />
+      <section class="catalog" id="catalog">
+        <div class="container catalog-container">
+          <h2 class="catalog-title">Catalog</h2>
+          <ul class="catalog-list">
+            <li class="catalog-item">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/catalog/desktop-watch-1@1x.jpg 1x,
+                    ./images/catalog/desktop-watch-1@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px) and (max-width: 1279px)"
+                  srcset="
+                    ./images/catalog/tablet-watch-1@1x.jpg 1x,
+                    ./images/catalog/tablet-watch-1@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/catalog/mobile-watch-1@1x.jpg 1x,
+                    ./images/catalog/mobile-watch-1@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="catalog-img"
+                  src="./images/catalog/desktop-watch-1@1x.jpg"
+                  alt="Garmin Fenix 7X Pro Sapphire Solar"
+                />
+              </picture>
+              <h3 class="catalog-desc">Garmin Fenix 7X Pro Sapphire Solar</h3>
+              <p class="catalog-price">€500</p>
+            </li>
+            <li class="catalog-item">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/catalog/desktop-watch-2@1x.jpg 1x,
+                    ./images/catalog/desktop-watch-2@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px) and (max-width: 1279px)"
+                  srcset="
+                    ./images/catalog/tablet-watch-2@1x.jpg 1x,
+                    ./images/catalog/tablet-watch-2@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/catalog/mobile-watch-2@1x.jpg 1x,
+                    ./images/catalog/mobile-watch-2@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="catalog-img"
+                  src="./images/catalog/desktop-watch-2@1x.jpg"
+                  alt="Garmin Marq Athlete"
+                />
+              </picture>
+              <h3 class="catalog-desc">Garmin Marq Athlete</h3>
+              <p class="catalog-price">€450</p>
+            </li>
+            <li class="catalog-item">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/catalog/desktop-watch-3@1x.jpg 1x,
+                    ./images/catalog/desktop-watch-3@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px) and (max-width: 1279px)"
+                  srcset="
+                    ./images/catalog/tablet-watch-3@1x.jpg 1x,
+                    ./images/catalog/tablet-watch-3@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/catalog/mobile-watch-3@1x.jpg 1x,
+                    ./images/catalog/mobile-watch-3@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="catalog-img"
+                  src="./images/catalog/desktop-watch-3@1x.jpg"
+                  alt="Garmin Descent MK1"
+                />
+              </picture>
+              <h3 class="catalog-desc">Garmin Descent MK1</h3>
+              <p class="catalog-price">€680</p>
+            </li>
+            <li class="catalog-item">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/catalog/desktop-watch-4@1x.jpg 1x,
+                    ./images/catalog/desktop-watch-4@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px) and (max-width: 1279px)"
+                  srcset="
+                    ./images/catalog/tablet-watch-4@1x.jpg 1x,
+                    ./images/catalog/tablet-watch-4@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/catalog/mobile-watch-4@1x.jpg 1x,
+                    ./images/catalog/mobile-watch-4@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="catalog-img"
+                  src="./images/catalog/desktop-watch-4@1x.jpg"
+                  alt="Garmin D2 Delta PX"
+                />
+              </picture>
+              <h3 class="catalog-desc">Garmin D2 Delta PX</h3>
+              <p class="catalog-price">€380</p>
+            </li>
+            <li class="catalog-item hidden-mob">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/catalog/desktop-watch-5@1x.jpg 1x,
+                    ./images/catalog/desktop-watch-5@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px) and (max-width: 1279px)"
+                  srcset="
+                    ./images/catalog/tablet-watch-5@1x.jpg 1x,
+                    ./images/catalog/tablet-watch-5@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="catalog-img"
+                  src="./images/catalog/desktop-watch-5@1x.jpg"
+                  alt="Garmin Fenix 6 Pro Solar"
+                />
+              </picture>
+              <h3 class="catalog-desc">Garmin Fenix 6 Pro Solar</h3>
+              <p class="catalog-price">€400</p>
+            </li>
+            <li class="catalog-item hidden-mob">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/catalog/desktop-watch-6@1x.jpg 1x,
+                    ./images/catalog/desktop-watch-6@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px) and (max-width: 1279px)"
+                  srcset="
+                    ./images/catalog/tablet-watch-6@1x.jpg 1x,
+                    ./images/catalog/tablet-watch-6@2x.jpg 2x
+                  "
+                />
 
-              <img src="./images/catalog/desktop-watch-5@1x.jpg"
-            /></picture>
-            <h3>Garmin Fenix 6 Pro Solar</h3>
-            <p>€400</p>
-          </li>
-          <li>
-            <picture>
-              <source
-                media="(min-width: 1280px)"
-                srcset="
-                  ./images/catalog/desktop-watch-6@1x.jpg 1x,
-                  ./images/catalog/desktop-watch-6@2x.jpg 2x
-                " />
-              <source
-                media="(min-width: 768px) and (max-width: 1279px)"
-                srcset="
-                  ./images/catalog/tablet-watch-6@1x.jpg 1x,
-                  ./images/catalog/tablet-watch-6@2x.jpg 2x
-                " />
-              <img src="./images/catalog/desktop-watch-6@1x.jpg"
-            /></picture>
-            <h3>Tube Watch S42 Date Steel With Black Case €395</h3>
-            <p>€395</p>
-          </li>
-        </ul>
-        <a href="#">Show More</a>
+                <img
+                  class="catalog-img"
+                  src="./images/catalog/desktop-watch-6@1x.jpg"
+                  alt="Tube Watch S42 Date Steel With Black Case"
+                />
+              </picture>
+              <h3 class="catalog-desc">
+                Tube Watch S42 Date Steel With Black Case
+              </h3>
+              <p class="catalog-price">€395</p>
+            </li>
+          </ul>
+          <button class="catalog-btn" type="button">Show More</button>
+        </div>
       </section>
 
       <!--section-4-advertisement-->
@@ -364,7 +408,7 @@
       </section>
 
       <!--section-5-sale-->
-      <section class="hidden">
+      <section class="hidden" id="sale">
         <h2>Sale</h2>
         <ul>
           <li>
@@ -483,7 +527,7 @@
       </section>
 
       <!--section-6-reviews-->
-      <section class="hidden">
+      <section class="hidden" id="reviews">
         <h2>Reviews</h2>
         <ul>
           <li>
@@ -535,7 +579,7 @@
       </section>
 
       <!--section-7-contact-us-->
-      <section class="hidden"></section>
+      <section class="hidden" id="contact"></section>
     </main>
     <footer>
       <section class="hidden"></section>
@@ -552,22 +596,22 @@
         <nav class="mobile-nav">
           <ul class="mobile-nav-list">
             <li class="mobile-nav-item">
-              <a class="mobile-nav-link current" href="./index.html">Home</a>
+              <a class="mobile-nav-link current" href="#home">Home</a>
             </li>
             <li class="mobile-nav-item">
-              <a class="mobile-nav-link" href="#">About Us</a>
+              <a class="mobile-nav-link" href="#about">About Us</a>
             </li>
             <li class="mobile-nav-item">
-              <a class="mobile-nav-link" href="#">Catalog</a>
+              <a class="mobile-nav-link" href="#catalog">Catalog</a>
             </li>
             <li class="mobile-nav-item">
-              <a class="mobile-nav-link" href="#">Sale</a>
+              <a class="mobile-nav-link" href="#sale">Sale</a>
             </li>
             <li class="mobile-nav-item">
-              <a class="mobile-nav-link" href="#">Reviews</a>
+              <a class="mobile-nav-link" href="#reviews">Reviews</a>
             </li>
             <li class="mobile-nav-item">
-              <a class="mobile-nav-link" href="#">Contact Us</a>
+              <a class="mobile-nav-link" href="#contact">Contact Us</a>
             </li>
           </ul>
         </nav>
@@ -598,5 +642,6 @@
     <script src="./js/click.js"></script>
     <script src="./js/modal-menu.js"></script>
     <script src="./js/header.js"></script>
+    <script src="./js/catalog.js"></script>
   </body>
 </html>
