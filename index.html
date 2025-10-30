@@ -22,7 +22,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header">
+      <div class="container header-container">
         <nav class="header-nav">
           <!--header-logo-->
           <a class="header-logo" href="./index.html">watchcharm</a>
@@ -87,16 +87,19 @@
       <!--section-1-hero-->
       <section class="hero">
         <div class="container hero-container">
-          <div class="hero-wrapper">
-            <div class="hero-wrapper-top">
-              <h1 class="hero-title">Welcome to our <span class="hero-accent">collection</span> of premium watches</h1>
+          <div class="hero-content">
+            <div class="hero-content-right">
+              <h1 class="hero-title">
+                Welcome to our <span class="hero-accent">collection</span> of
+                premium watches
+              </h1>
               <p class="hero-desc">
                 Our watches are not just timepieces, but also an expression of
                 your personality and lifestyle. From classic designs to modern
                 ones, we have a watch to suit every taste and occasion.
               </p>
             </div>
-            <div class="hero-wrapper-middle">
+            <div class="hero-content-left">
               <picture>
                 <source
                   media="(min-width: 1280px)"
@@ -119,7 +122,11 @@
                     ./images/hero-img/mobile-hero-customer@2x.jpg 2x
                   "
                 />
-                <img class="hero-icon" src="./images/hero-img/desktop-hero-customer@1x.jpg" alt="customer" />
+                <img
+                  class="hero-icon"
+                  src="./images/hero-img/desktop-hero-customer@1x.jpg"
+                  alt="customer"
+                />
               </picture>
               <a class="hero-btn" href="#">Scroll down</a>
             </div>
@@ -145,50 +152,58 @@
                 ./images/hero-img/mobile-hero@2x.jpg 2x
               " />
 
-            <img class="hero-img" src="./images/hero-img/desktop-hero@1x.jpg" alt="watch"
+            <img
+              class="hero-img"
+              src="./images/hero-img/desktop-hero@1x.jpg"
+              alt="watch"
           /></picture>
         </div>
       </section>
 
       <!--section-2-about-us-->
-      <section class="hidden">
-        <article>
-          <h2>About Us</h2>
-          <p>
-            Welcome to our premium watch collection, where luxury and style meet
-            functionality and precision. Our selection of timepieces embodies
-            the very best in Swiss craftsmanship and engineering, ensuring that
-            you'll always have a reliable and stylish accessory on your wrist.
-          </p>
-          <p>
-            At our premium watch collection, we believe that a watch is more
-            than just a timekeeping device – it's a statement piece that
-            reflects your personality and style. So why settle for anything less
-            than the best?
-          </p>
-          <a href="#">View catalog</a>
-        </article>
-        <picture>
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              ./images/about-us/desktop-about-us@1x.jpg 1x,
-              ./images/about-us/desktop-about-us@2x.jpg 2x
-            " />
-          <source
-            media="(min-width: 768px) and (max-width: 1279px)"
-            srcset="
-              ./images/about-us/tablet-about-us@1x.jpg 1x,
-              ./images/about-us/tablet-about-us@2x.jpg 2x
-            " />
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              ./images/about-us/mobile-about-us@1x.jpg 1x,
-              ./images/about-us/mobile-about-us@2x.jpg 2x
-            " />
-          <img src="./images/about-us/desktop-about-us@1x.jpg"
-        /></picture>
+      <section class="about-us">
+        <div class="container about-container">
+          <article class="about-content">
+            <h2 class="about-title">About Us</h2>
+            <div class="about-info">
+            <p class="about-desc">
+              Welcome to our premium watch collection, where luxury and style
+              meet functionality and precision. Our selection of timepieces
+              embodies the very best in Swiss craftsmanship and engineering,
+              ensuring that you'll always have a reliable and stylish accessory
+              on your wrist.
+            </p>
+            <p class="about-desc">
+              At our premium watch collection, we believe that a watch is more
+              than just a timekeeping device – it's a statement piece that
+              reflects your personality and style. So why settle for anything
+              less than the best?
+            </p>
+            </div>
+            <a class="about-btn" href="#">View catalog</a>
+          </article>
+          <picture class="about-img">
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./images/about-us/desktop-about-us@1x.jpg 1x,
+                ./images/about-us/desktop-about-us@2x.jpg 2x
+              " />
+            <source
+              media="(min-width: 768px) and (max-width: 1279px)"
+              srcset="
+                ./images/about-us/tablet-about-us@1x.jpg 1x,
+                ./images/about-us/tablet-about-us@2x.jpg 2x
+              " />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./images/about-us/mobile-about-us@1x.jpg 1x,
+                ./images/about-us/mobile-about-us@2x.jpg 2x
+              " />
+            <img src="./images/about-us/desktop-about-us@1x.jpg"
+          /></picture>
+        </div>
       </section>
 
       <!--section-3-catalog-->
