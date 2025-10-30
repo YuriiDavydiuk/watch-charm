@@ -135,8 +135,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .container.header {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 
   .header-logo {
@@ -158,11 +158,6 @@ img {
 @media screen and (min-width: 1280px) {
   .burger-btn {
     display: none;
-  }
-
-  .container.header-container {
-    padding-top: 26px;
-    padding-bottom: 26px;
   }
 
   .header-nav {
@@ -249,7 +244,7 @@ img {
 
 .container.hero-container {
   padding-top: 60px;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .hero-title {
@@ -302,7 +297,7 @@ img {
 @media screen and (min-width: 768px) {
   .container.hero-container {
     padding-top: 80px;
-    padding-bottom: 80px;
+    margin-bottom: 80px;
   }
 
   .hero-content {
@@ -346,6 +341,10 @@ img {
 }
 
 @media screen and (min-width: 1280px) {
+  .container.hero-container {
+    margin-bottom: 100px;
+  }
+
   .hero-content {
     gap: 407px;
   }
@@ -358,6 +357,9 @@ img {
 /* #endregion */
 
 /* #region about-us section 2 */
+.container.about-container {
+  margin-bottom: 60px;
+}
 
 .about-content {
   background: #f3f3f3;
@@ -417,6 +419,10 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .container.about-container {
+    margin-bottom: 80px;
+  }
+
   .about-content {
     padding: 80px 60px;
   }
@@ -437,6 +443,7 @@ img {
     display: flex;
     align-items: stretch;
     gap: 40px;
+    margin-bottom: 100px;
   }
 
   .about-content {
@@ -449,10 +456,10 @@ img {
 
 /* #endregion */
 
-/* #region section 3 catalog */
+/* #region catalog section 3 */
 
 .container.catalog-container {
-  padding-top: 60px;
+  margin-bottom: 60px;
 }
 
 .catalog-title {
@@ -533,7 +540,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .container.catalog-container {
-    padding-top: 80px;
+    margin-bottom: 80px;
   }
 
   .catalog-btn {
@@ -579,7 +586,7 @@ img {
 
 @media screen and (min-width: 1280px) {
   .container.catalog-container {
-    padding-top: 100px;
+    margin-bottom: 100px;
   }
   .catalog-title {
     font-weight: 600;
@@ -609,7 +616,95 @@ img {
     color: rgba(12, 12, 12, 0.5);
   }
 }
-/* @endregion */
+/* #endregion */
+
+/* #region adverb section 4 */
+
+.container.adverb-container {
+  background-image: linear-gradient(rgba(12, 12, 12, 90%)),
+    url(./images/section-3/mobile-section-3@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #000;
+  border-radius: 30px;
+
+  margin-bottom: 60px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 28px;
+}
+
+.adverb-title {
+  font-size: 32px;
+
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+}
+
+.adverb-accent {
+  color: rgba(251, 251, 251, 0.5);
+}
+
+.adverb-wrapper {
+  border: 1px solid rgba(251, 251, 251, 0.15);
+  border-radius: 16px;
+  width: 160px;
+  height: 48px;
+  padding: 13px 44px;
+
+  transition: border-color 300ms ease-in;
+}
+
+.adverb-link {
+  font-weight: 500px;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #fbfbfb;
+}
+
+.adverb-wrapper:hover,
+.adver-wrapper:focus {
+  border: 1px solid rgba(251, 251, 251, 100%);
+}
+
+@media screen and (min-width: 768px) {
+  .container.adverb-container {
+    padding: 80px 64px;
+    gap: 32px;
+    margin-bottom: 80px;
+  }
+
+  .adverb-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 0.92;
+    max-width: 576px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container.adverb-container {
+    flex-direction: row;
+    gap: 140px;
+    padding: 83px 80px;
+    justify-content: space-around;
+  }
+
+  .adverb-title {
+    max-width: 690px;
+  }
+}
+/* #endregion */
+
+/* #region sale section 5 */
+
+/* endregion */
 
 /* #region mobile-menu */
 
