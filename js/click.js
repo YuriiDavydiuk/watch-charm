@@ -4,27 +4,19 @@ const links = document.querySelectorAll(".header-menu-link");
 function setActive(link) {
   links.forEach((l) => l.classList.remove("current"));
   link.classList.add("current");
-  localStorage.setItem("currentLink", link.textContent.trim());
 }
 
 // Обробка кліку
 links.forEach((link) => {
-  link.addEventListener("click", function (e) {
+  link.addEventListener("click", function () {
     setActive(this);
   });
 });
 
-// Встановлення активного пункту при завантаженні сторінки
+// Завжди активувати "Home" при завантаженні
 window.addEventListener("DOMContentLoaded", () => {
-  const saved = localStorage.getItem("currentLink");
-  if (saved) {
-    links.forEach((link) => {
-      if (link.textContent.trim() === saved) {
-        setActive(link);
-      }
-    });
-  } else {
-    // Якщо нічого не збережено — встановити перший пункт як активний
-    setActive(links[0]);
-  }
+  const homeLink = Array.from(links).find(link =>
+    link.textContent.trim().toLowerCase() === "home"
+  );
+  setActive(homeLink || links[0]);
 });
