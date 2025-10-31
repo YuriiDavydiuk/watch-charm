@@ -599,7 +599,87 @@
       </section>
 
       <!--section-7-contact-us-->
-      <section class="hidden" id="contact"></section>
+      <section class="contact" id="contact">
+        <div class="container contact-container">
+          <h2 class="contact-title">Contact Us</h2>
+          <div class="form-wrapper">
+            <form class="form" name="contact-form">
+              <p class="form-title">
+                Please use the form below to contact us. Enter your name, email,
+                phone, and message and we'll get back to you shortly.
+              </p>
+              <div class="form-field-wrapper">
+                <div class="form-field">
+                  <input
+                    id="user-name"
+                    name="user-name"
+                    class="form-input"
+                    type="text"
+                    placeholder=""
+                  /><label class="form-label" for="user-name">Name</label>
+                </div>
+
+                <div class="form-field">
+                  <input
+                    id="user-email"
+                    name="user-email"
+                    class="form-input"
+                    type="email"
+                    placeholder=""
+                  />
+                  <label class="form-label" for="user-email">Email</label>
+                </div>
+
+                <div class="form-field">
+                  <input
+                    id="user-phone"
+                    name="user-phone"
+                    class="form-input"
+                    type="tel"
+                    placeholder=""
+                  /><label class="form-label" for="user-phone">+380</label>
+                </div>
+
+                <div class="form-field">
+                  <textarea
+                    class="form-input comment"
+                    id="user-comment"
+                    name="user-comment"
+                    placeholder=""
+                    rows="4"
+                  ></textarea>
+                  <label class="form-label" for="user-comment">Comment</label>
+                </div>
+              </div>
+              <button class="form-btn" type="submit">Send</button>
+            </form>
+
+            <picture >
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  ./images/contact-us/desktop-contact-us@1x.jpg 1x,
+                  ./images/contact-us/desktop-contact-us@2x.jpg 2x
+                " />
+              <source
+                media="(min-width: 768px) and (max-width: 1279px)"
+                srcset="
+                  ./images/contact-us/tablet-contact-us@1x.jpg 1x,
+                  ./images/contact-us/tablet-contact-us@2x.jpg 2x
+                " />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/contact-us/mobile-contact-us@1x.jpg 1x,
+                  ./images/contact-us/mobile-contact-us@2x.jpg 2x
+                " />
+              <img
+                class="contact-img"
+                src="./images/contact-us/desktop-contact-us@1x.jpg"
+            /></picture>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <section class="hidden"></section>
